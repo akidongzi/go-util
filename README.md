@@ -5,7 +5,7 @@ Go 工具包，已停止维护！建议使用 [go-gin-api](https://github.com/xi
 ## 安装
 
 ```go
-go get github.com/xinliangnote/go-util
+go get github.com/akidongzi/go-util
 ```
 
 ## 方法
