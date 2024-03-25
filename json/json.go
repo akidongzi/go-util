@@ -1,6 +1,9 @@
 package json
 
-import "encoding/json"
+import （
+    "encoding/json"
+    "string"
+）
 
 func Encode(v interface{}) (string, error) {
 	bytes, err := json.Marshal(v)
@@ -12,4 +15,14 @@ func Encode(v interface{}) (string, error) {
 
 func Decode(data []byte, val interface{}) error {
 	return json.Unmarshal(data, val)
+}
+
+
+// ObjToJSON ...
+func ObjToJSON(msg interface{}) string {
+	jso, error := json.Marshal(msg)
+	if error == nil {
+		return string(jso)
+	}
+	return ""
 }
