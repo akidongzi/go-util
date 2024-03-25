@@ -14,7 +14,6 @@ func Decode(data []byte, val interface{}) error {
 	return json.Unmarshal(data, val)
 }
 
-
 // ObjToJSON ...
 func ObjToJSON(msg interface{}) string {
 	jso, error := json.Marshal(msg)
