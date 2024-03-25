@@ -1,9 +1,6 @@
 package json
 
-import （
-    "encoding/json"
-    "string"
-）
+import "encoding/json"
 
 func Encode(v interface{}) (string, error) {
 	bytes, err := json.Marshal(v)
